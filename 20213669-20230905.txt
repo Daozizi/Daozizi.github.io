@@ -1,0 +1,129 @@
+    javaweb课第一次总结 
+cd:进入文档指令,后面加文件路径或者文件名,可以进入该文档,其他指令便是在此文档上进行操作.
+ls:查看指令,可以查看当前文档内所有的内容,配合-l可以显示文件内容详细大小,权限,创建时间等.
+mkdir:创建文件指令,格式为mkdir xxxx 可以在当文件下创建一个名为xxxx的文件夹.
+cp:复制指令,后面加上要复制内容的路径,可以在当前文件将路径对应文件复制过来.
+..:用于退回当前文件上一级文件.
+rmdir:用于删除文件,格式为rmdir xxxx 可以将当前文件下名为xxxx的文件删除,前提是xxxx文件为空.
+history:用于查看电脑输入指令集,打出该指令便可以查看指令历史记录.
+history -> xxxx.txt:用于将指令历史集导出为一个名为xxxx的文本文档,其内容为历史指令集.
+-r:用于递归显示当前目录中的所有文件和子目录.
+    1  ls
+    2  ls
+    3  mkdir DaoziG
+    4  ls/DaoziG
+    5  mkdir xiongjj
+    6  cd
+    7  mkdir xiongjj
+    8  cd/xiongjj
+    9  cd xiongjj/
+   10  cd DaoziG/
+   11  cp D:\lol\WeChat Files\wxid_89g5sflhcjp612\FileStorage\File\2023-09\book .-r
+   12  cp D:\lol\WeChat Files\wxid_89g5sflhcjp612\FileStorage\File\2023-09\book
+   13  cp D\lol\WeChat Files\wxid_89g5sflhcj612\FileStorage\File\2023-09\book
+   14  cp /d/
+   15  cp /d/lol/WeChat\ Files/wxid_89g5sflhcjp612/FileStorage/File/2023-09/book/ . -r
+   16  cp /d/lol/WeChat\ Files/wxid_89g5sflhcjp612/FileStorage/File/2023-09/book/ . -r
+   17  cp /d/lol/WeChat\ Files/wxid_89g5sflhcjp612/FileStorage/File/2023-09/book/ . -r
+   18  cp /d/lol/WeChat\ Files/wxid_89g5sflhcjp612/FileStorage/File/2023-09/book/ . -r
+   19  cp /d
+   20  cp /d/大三html/book
+   21  cp /d/大三html/book . -r
+   22  cp /d/大三html/book . -r
+   23  cp /d/大三html/book* .
+   24  cp /d/大三html/book/* .
+   25  CD /
+   26  cd /
+   27  cd xiongjj/
+   28  cp /d/大三html/book/* .
+   29  his
+   30  cd /
+   31  his
+   32  his/
+   33  mkdir xiongjj1
+   34  cd /
+   35  cd xjj
+   36  cd xiongjjj
+   37  cd xiongjj
+   38  ls
+   39  history
+   40  history
+   41  cd /
+   42  cd xiongjj
+   43  mkdir picture
+   44  cd picture
+   45  cp /d/大三html/
+   46  cp /d/大三html/pic/* 
+   47  cp /d/大三html/pic/* -r
+   48  cp /d/大三html/pic/
+   49  cp /d/大三html/pic
+   50  cp /d/大三html/pic/ -r
+   51  cp /d/大三html/pic/* -r
+   52  history
+   53  cp /d/大三html/pic/R-C.png  .
+   54  cd /
+   55  ls
+   56  rmdir xiongjj1
+   57  ls
+   58  cd xiongjj
+   59  ls
+   60  rm picture
+   61  rmdir picture
+   62  cd xiongjj
+   63  cd picture
+   64  rmdir *
+   65  rmdir R-C.png 
+   66  cd
+   67  cd /
+   68  rmdir pic
+   69  cd d
+   70  rmdir pic
+   71  cd 大三html
+   72  rmdir pic
+   73  history
+   74  ls
+   75  cd
+   76  cd d
+   77  cd d/
+   78  cd 
+   79  cd /
+   80  cd xiongjj
+   81  mkdir vicd DaoziG/
+   82     11  cp D:\lol\WeChat Files\wxid_89g5sflhcjp612\FileStorage\File\2023-09\book .-r
+   83  mkdir vedio
+   84  cd vedio
+   85  ls
+   86  cd xiongjj
+   87  cd ..
+   88  ls
+   89  rmdir DaoziG
+   90  LS
+   91  ls
+   92  mkdir book
+   93  ls
+   94  cd book
+   95  cp /xiongjj/Eloquent_JavaScript.pdf .
+   96  cp /xiongjj/Learn\ CSS\ in\ One\ Day\ and\ Learn\ It\ Well.pdf 
+   97  cp /xiongjj/Learn\ CSS\ in\ One\ Day\ and\ Learn\ It\ Well.pdf .
+   98  cp /xiongjj/The\ Linux\ Command\ Line\ A\ Complete\ Introduction.pdf .
+   99  rm /xiongjj/The\ Linux\ Command\ Line\ A\ Complete\ Introduction.pdf .
+  100  rm /xiongjj/Learn\ CSS\ in\ One\ Day\ and\ Learn\ It\ Well.pdf .
+  101  rm /xiongjj/Eloquent_JavaScript.pdf .
+  102  history
+  103  cd ..
+  104  ls
+  105  lsl
+  106  ls L
+  107  ls -l
+  108  history >
+  109  history <
+  110  history >
+  111  history ->
+  112  history >history.txt
+  113  ls
+  114  mkdir History
+  115  re history .
+  116  re history.txt
+  117  rm history.txt
+  118  cd History/
+  119  history > history01.txt
