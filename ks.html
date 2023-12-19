@@ -59,7 +59,7 @@
 
         div#logo {
             text-align: center;
-            background-color: beige;
+            background-color: rgb(242, 242, 105);
             color: black;
             font-size: 4vw;
             position: absolute;
@@ -101,12 +101,12 @@
         }
 
         .myImage {
-            width: 12%;
+            width: 9%;
             height: 16%;
         }
 
         .myImage2 {
-            width: 30%;
+            width: 25%;
             height: 60%;
         }
     </style>
@@ -124,8 +124,8 @@
         <img class="myImage" src="https://daozizi.github.io/images/myFace3.jpg" alt="Xiahao">
         <img class="myImage" src="https://daozizi.github.io/images/myFace4.jpg" alt="Xiongjj">
         <img class="myImage" src="https://daozizi.github.io/images/myFace5.jpg" alt="Yvsenzhou">
+        <img class="myImage" src="https://daozizi.github.io/myFace6.jpg" alt="laoshi">
         <img class="myImage2" src="https://daozizi.github.io/images/xiaozu.jpg" alt="Xiaozu">
-
     </div>
     <div id="UI">
 
@@ -272,7 +272,7 @@
         Model.UI.myVideoDom.src = mediaData.videoPath + mediaData.videoFileNames[Model.i];
 
         //设置全屏ui
-        Model.UI.browserWidth = document.body.clientWidth;
+        Model.UI.browserWidth = document.body.clientWidth * 0.985;
         Model.UI.myVideoDom.style.width = Model.UI.browserWidth + "px";
         //设置视频进度条
         Model.vProgress();
@@ -293,7 +293,7 @@
             showtimeString += '/' + parseInt(myMedia.duration) + 's';
             showtime.textContent = showtimeString;
             Model.logoInfo();
-        }, 100)
+        }, 50)
 
         // 异步程序代码
 
