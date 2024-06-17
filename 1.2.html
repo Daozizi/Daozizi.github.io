@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <!-- 
+   增加这句后，可以看到浏览器的DevTools面板的模拟移动设备状态的变化
+  -->
+  <style>
+    body {
+      font-size: 1em;
+      text-align: center;
+    }
+
+    header {
+      border: 1px solid rgb(236, 253, 139);
+      height: 8%;
+      background-color: rgb(121, 251, 136);
+      color: black;
+    }
+
+    nav {
+      border: 1px solid rgb(236, 253, 139);
+      height: 4%;
+    }
+
+    button {
+      font-size: 1.3em;
+    }
+
+    p#book {
+      font-size: 1.5em;
+    }
+
+    main {
+      border: 1px solid rgb(236, 253, 139);
+      height: 50%;
+      background: url(../../images/animal1.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    footer {
+      border: 1px solid rgb(236, 253, 139);
+      height: 10%;
+    }
+  </style>
+  <title>Welcome to myCTApp</title>
+</head>
+
+<body>
+  <header>
+    <p id="book">
+      《自然野生动物鉴赏录》
+    </p>
+  </header>
+
+  <p id="statusInfo">
+  <nav>
+    <button>下一页 </button><button>1/10</button><button>上一页</button>
+  </nav>
+  </p>
+
+  <main>
+
+  </main>
+
+  <footer>
+    CopyRight from 熊金菁 江西科技师范大学 2022--2025
+  </footer>
+
+  <script>
+    var UI = {
+    }
+    UI.deviceWidth = window.innerWidth;
+    UI.deviceHeight = window.innerHeight;
+    document.body.style.height = UI.deviceHeight + "px";
+    document.body.style.fontSize = UI.deviceWidth / 25 + "px";
+
+
+  </script>
+</body>
+
+</html>
